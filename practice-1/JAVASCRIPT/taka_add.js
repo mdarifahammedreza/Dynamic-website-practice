@@ -5,12 +5,6 @@ document
     const depositAmountValueString = depositAmount.value;
     depositAmount.value = "";
     var depositAmountValueFloat = parseFloat(depositAmountValueString);
-    // const a = isNaN(depositAmountValueFloat);
-    // console.log(a);
-    // if (!a) {
-    //   depositAmountValueFloat = 0;
-    //   alert("Please Enter Valid Number");
-    // }
     if (isNaN(depositAmountValueFloat)) {
       depositAmountValueFloat = 0;
       alert("Please Enter a Valid Number");
@@ -26,4 +20,10 @@ document
     const updatedDepositAmountValue =
       previousDepositamountValueFloat + depositAmountValueFloat;
     previousDepositamount.innerText = updatedDepositAmountValue;
+
+    const totalBalance = document.getElementById("total-balance");
+    const totalBalancefloat = parseFloat(totalBalance.innerText);
+
+    const newTotalBalancefloat = totalBalancefloat + depositAmountValueFloat;
+    totalBalance.innerText = newTotalBalancefloat;
   });
