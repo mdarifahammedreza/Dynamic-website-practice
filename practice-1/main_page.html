@@ -66,7 +66,7 @@
         <div class="grid  gap-4 mt-16 grid-cols-3">
             <div class="mx-auto w-9/12 p-5  bg-sky-300 font-extrabold rounded-md text-white ">
                 <h3 class="text-lg">Deposit</h3>
-                <h1 class="text-4xl">$ 000000</h1>
+                <h1 class="text-4xl">$<span id="previousDepositamount">00</span></h1>
             </div>
             <div class="mx-auto w-9/12 p-5  bg-lime-300 font-extrabold rounded-md text-white ">
                 <h3 class="text-lg">Withdraw</h3>
@@ -82,24 +82,25 @@
         <div class="bg-purple-950 p-5 rounded-md">
             <h1 class=" font-bold text-2xl">Please enter deposit amount:</h1>
             <div class="ml-8 grid grid-cols-1 gap-5 my-5">
-                <input type="text" name="" id="" class="block rounded-md px-3 py-2 bg-purple-700 text-black font-bold"
-                    placeholder="Enter Amount">
-                <button type="submit"
+                <input type="text" name="" id="Deposit"
+                    class="block rounded-md px-3 py-2 bg-purple-700 text-black font-bold" placeholder="Enter Amount">
+                <button type="submit" id="Deposit-submit"
                     class="block bg-sky-500  p-1 px-3 rounded-md text-white hover:bg-sky-700">Deposit</button>
             </div>
         </div>
         <div class="bg-purple-950 p-5 rounded-md">
             <h1 class=" font-bold text-2xl">Please enter withdraw amount:</h1>
             <div class="ml-8 grid grid-cols-1 gap-5 my-5">
-                <input type="text" name="" id="" class="block rounded-md px-3 py-2 bg-purple-700 text-black font-bold"
-                    placeholder="Enter Amount">
-                <button type="submit"
+                <input type="text" name="" id="Withdraw"
+                    class="block rounded-md px-3 py-2 bg-purple-700 text-black font-bold" placeholder="Enter Amount">
+                <button type="submit" id="Withdraw-submit"
                     class="block bg-sky-500  p-1 px-3 rounded-md text-white hover:bg-sky-700">Deposit</button>
             </div>
         </div>
 
     </section>
-
+    <script src="./JAVASCRIPT/taka_add.js"></script>
+    <script src="./JAVASCRIPT/taka_ber.js"></script>
 </body>
 
 </html>
